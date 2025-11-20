@@ -1,6 +1,6 @@
-const slideOVTemplateId = '1YyiYq-R7Z6uthS8bGbUG4mOlGl6pAPlmDUbVth5eHD8'; // REMPLACER PAR L'ID DE VOTRE MODÈLE SLIDES ORGANISATEURS/SPEAKERS
-const slideATemplateId = '1jYheVbmN1GXM4v_IBoN7lYlB5x8sI66XzhF92yB70Ak';   // REMPLACER PAR L'ID DE VOTRE MODÈLE SLIDES ATTENDEES
-const tempFolderId = '1snxnI7QbHchcGqK-RvT0bruFctP40qgi'; // REMPLACER PAR L'ID DE VOTRE DOSSIER TEMPORAIRE DANS GOOGLE DRIVE
+const slideOVTemplateId = 'XXXXXXXXXX'; // REMPLACER PAR L'ID DE VOTRE MODÈLE SLIDES ORGANISATEURS/SPEAKERS
+const slideATemplateId = 'XXXXXXXXXX';   // REMPLACER PAR L'ID DE VOTRE MODÈLE SLIDES ATTENDEES
+const tempFolderId = 'XXXXXXXXXX'; // REMPLACER PAR L'ID DE VOTRE DOSSIER TEMPORAIRE DANS GOOGLE DRIVE
 
 /**
  * Crée un menu personnalisé "DevFest 2025" dans le tableur
@@ -9,11 +9,11 @@ const tempFolderId = '1snxnI7QbHchcGqK-RvT0bruFctP40qgi'; // REMPLACER PAR L'ID 
 function onOpen() {
   const ui = SpreadsheetApp.getUi();
   ui.createMenu('DevFest 2025')
-      .addItem('Generate ID', 'generateUniqueIds')
+      .addItem('1- Generate ID', 'generateUniqueIds')
       .addSeparator()
-      .addItem('Create certificates', 'createCertificates')
+      .addItem('2- Create certificates', 'createCertificates')
       .addSeparator()
-      .addItem('Send certificates', 'sendCertificates')
+      .addItem('3- Send certificates', 'sendCertificates')
       .addToUi();
 }
 
